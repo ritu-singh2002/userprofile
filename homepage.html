@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body{
+            padding:30px;
+            background:linear-gradient(to right,#01d3ca, #3b0855); 
+
+        }
+        h1{
+            text-align:center;
+
+        }
+        button{
+            color:teal;
+            background-color: #c4c4c4;
+            padding:10px;
+            width: 200px;
+            border-radius:20px;
+            font-size:20px;
+            font-weight:700;
+            border:none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+            
+        }
+        button:hover{
+            text-decoration: underline;
+            color:#3b0855;
+        }
+       div{
+            font-size:20px;
+            padding:10px;
+            text-align: center;
+        }
+        div{
+            font-weight:400;
+            color:white;
+        }
+        .n{
+            margin-top: 50px;
+        }
+        span{
+            font-weight:600;
+            font-size:22px;
+            color:whitesmoke;
+
+        }
+
+        p{
+            color:  #c4c4c4;
+            font-weight: 400;
+            text-align: center;
+            margin-top: -12px;
+            font-size: 1.2rem;
+        }
+        #profile-image{
+            width: 150px;  
+            height: 150px;
+            border-radius: 50%; 
+            object-fit: cover;  
+            border: 3px solid #c4c4c4;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 5px 5px 20px 2px black;
+}
+    </style>
+    <script type="module" src="./homepage.js"></script>
+</head>
+<body>
+    <h1>Welcome to your Dashboard!</h1>
+    <p>View your profile details below.</p>
+    <img src="" alt="" id="profile-image">
+    <div class="n"> <span id="loggedUserName"></span></div>
+    <div><span id="loggedUserPhone"></span></div>
+    <div><span id="loggedUserEmail"></span></div>
+    <button id="logout">Logout</button>
+</body>
+</html>
